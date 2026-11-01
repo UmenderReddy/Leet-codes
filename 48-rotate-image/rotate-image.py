@@ -8,6 +8,5 @@ class Solution:
         for i in range(r):
             for j in range(i+1,c):
                 matrix[i][j],matrix[j][i]=matrix[j][i],matrix[i][j]
-        
         for k in range(r):
             matrix[k].reverse()
