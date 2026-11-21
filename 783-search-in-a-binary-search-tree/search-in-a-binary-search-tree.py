@@ -7,8 +7,8 @@
 class Solution:
     def searchBST(self, root: TreeNode | None, val: int) -> TreeNode | None:
         if root is None:
-            return
-        if root.val==val:
+            return 
+        if val==root.val:
             return root
         elif val<root.val:
             return self.searchBST(root.left,val)
